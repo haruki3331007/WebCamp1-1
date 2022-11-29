@@ -1,0 +1,96 @@
+/*makig reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'游ゴシック体';
+}
+
+/*making header*/
+header{
+    height: 50px;
+    background-color: #ff9a4b;
+}
+
+/*making main*/
+main{
+    width: 960px;
+    margin: 50px auto;
+    /*background-color: aquamarine;     /*gonna be deleted*/
+    display: flex;
+    justify-content: space-between
+}
+main .main-content{
+    width: 300px;
+    background-color: #eeeeee;   
+    position: relative;
+}
+main .step{
+    background-color: #ff9a4b;
+    color: white;
+    font-size: 14px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: absolute;
+}
+main .main-without-step{
+    padding: 10px; 
+}
+main .picture{
+    background-position: bottom;
+    background-size: cover;
+    height: 150px;
+}
+main .pic1{
+    background-image: url(./img/flow01.png);
+}
+main .pic2{
+    background-image: url(./img/flow02.png);
+}
+main .pic3{
+    background-image: url(./img/flow03.png);
+}
+main .title{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+main p{
+    font-size: 12px;
+    line-height: 21px;
+}
+
+/*making footer*/
+footer{
+    height: 50px;
+    background-color: #aaaaaa;
+}
+
+
+/*
+|
+|
+|
+|
+|
+|
+↓
+*/
+
+@media screen and (max-width:768px){
+    main{
+        max-width: 100%;
+        display: block;
+        margin: 50px 0;
+    }
+
+    .main-content{
+        width: 90%;
+        margin:0 auto;
+    }
+    .main-content:nth-of-type(2){
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
