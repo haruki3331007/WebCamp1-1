@@ -85,7 +85,7 @@ footer{
     }
 
     .main-content{
-        min-width: 90%;
+        min-width: 90%;                 /*change: width→min-width*/
         margin:0 auto;
     }
     .main-content:nth-of-type(2){
